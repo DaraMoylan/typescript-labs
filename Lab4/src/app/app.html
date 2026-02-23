@@ -1,0 +1,14 @@
+<!-- My Star image, dblclick event listener is included to trigger a function -->
+<img (dblclick)="onDoubleClick()" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg"
+height="42" width="42">
+
+<!-- My hidden element that gets revealed by double clicking the star image -->
+<h2 [hidden]="starBool">Look at the star</h2>
+<br>
+
+<!-- button element that increments a counter variable when pressed -->
+<button (click)="onClickButton()">Press Me!</button>
+<p>The Number of times the button has been pressed is {{count}}</p>
+
+<!-- connect my list component-->
+<app-listcomponent></app-listcomponent>
