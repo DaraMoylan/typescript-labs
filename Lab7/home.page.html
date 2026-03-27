@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Movie App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <!-- Loop through the movies displaying the poster image, year and title-->
+  @for(movie of movies; track movie) {
+  <ion-card>
+    <img alt="Poster of movie" src={{movie.Poster}} width="500" height="1*"/>
+    <ion-card-header>
+      <ion-card-title>{{movie.Year}}</ion-card-title>
+      <ion-card-subtitle>{{movie.Title}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card> 
+  }
+</ion-content>
